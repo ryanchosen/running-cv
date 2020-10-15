@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Running Resume</title>
+  </head>
+  <body>
+    <span id="htmlArea"></span>
+    <div class="wrapper">
+      <div id="div1"></div>
+    </div>
+  </body>
+  <style>* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    *::before {
+      box-sizing: border-box;
+    }
+    *::after {
+      box-sizing: border-box;
+    }
+    #div1 {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #html {
+      word-break: break-all;
+    }
+    #div1::before {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+    #div1::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+    @media (max-width: 500px) {
+      #htmlArea {
+        overflow: auto;
+        height: 50vh;
+        width: 100vw;
+        display: inline-block;
+      }
+      .wrapper {
+        height: 50vh;
+      }
+      #div1 {
+        position: relative;
+      }
+    }</style>
+  <style id="style"></style>
+  <script src="/main.1f19ae8e.js"></script>
+</html>
